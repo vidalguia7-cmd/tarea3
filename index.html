@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff;
+            color: #000;
+        }
+        .page {
+            width: 800px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        /* Encabezado */
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 5px;
+        }
+        .header-table td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .header-table .logo-col {
+            width: 12%;
+        }
+        .header-table .title-col {
+            width: 76%;
+            font-weight: bold;
+        }
+        .header-title {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .header-subtitle {
+            font-size: 15px;
+        }
+        
+        /* Tabla de Datos de la Materia */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .info-table td {
+            border: 1px solid #999;
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+        .label {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        
+        /* Título de la práctica */
+        .practica-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 15px 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        /* Sección de Notas */
+        .nota-section {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .nota-title {
+            font-weight: bold;
+        }
+        .nota-section ul {
+            margin-top: 5px;
+            padding-left: 25px;
+        }
+        .nota-section li {
+            margin-bottom: 3px;
+        }
+
+        /* Preguntas */
+        .user-github {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .preguntas-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .question {
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .answer {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-left: 15px;
+        }
+        .answer ol {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-family: Consolas, monospace;
+            font-size: 12px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- Encabezado con Escudos y Título -->
+    <table class="header-table">
+        <tr>
+            <td class="logo-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Escudo_UATF.png/120px-Escudo_UATF.png" alt="Escudo UATF" width="55" height="55" style="display:block; margin:auto;" onerror="this.style.display='none'">
+            </td>
+            <td class="title-col">
+                <div class="header-title">UNIVERSIDAD AUTÓNOMA "TOMÁS FRÍAS"</div>
+                <div class="header-subtitle">INGENIERÍA DE SISTEMAS</div>
+            </td>
+            <td class="logo-col">
+                <img src="https://via.placeholder.com/55?text=SIS" alt="Sistemas" width="55" height="55" style="display:block; margin:auto;" onerror="this.style.display='none'">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Tabla de Información -->
+    <table class="info-table">
+        <tr>
+            <td class="label" style="width: 15%;">ESTUDIANTE:</td>
+            <td colspan="5">Guia Colque Juan Vidal</td>
+        </tr>
+        <tr>
+            <td class="label">DOCENTE:</td>
+            <td style="width: 35%;">Ing. Choque Matos Javier</td>
+            <td class="label" style="width: 12%;">MATERIA:</td>
+            <td colspan="3">SIS-313 G1</td>
+        </tr>
+        <tr>
+            <td class="label">AUXILIAR:</td>
+            <td>Univ. Alex Sander Lopez Orcko</td>
+            <td class="label">FECHA:</td>
+            <td style="width: 15%;">1/10/2026</td>
+            <td class="label" style="width: 13%;">PRÁCTICA N.</td>
+            <td style="width: 5%;">3</td>
+        </tr>
+    </table>
+
+    <!-- Título Principal -->
+    <div class="practica-title">PRÁCTICA N3 - GIT Y GITHUB</div>
+
+    
+    
+
+    <section>
+        
+
+        <article>
+            <h3>1) Formas principales de conectar HTML con JavaScript</h3>
+            <p><strong>A) Script Interno (In-line / Embedded):</strong> Se escribe el código directamente dentro de una etiqueta <code>&lt;script&gt;</code> en el archivo HTML.</p>
+            <pre><code>&lt;script&gt;
+    console.log("Hola desde código interno");
+&lt;/script&gt;</code></pre>
+
+            <p><strong>B) Script Externo:</strong> Se vincula un archivo ejecutable <code>.js</code> independiente mediante el atributo <code>src</code> en la etiqueta <code>&lt;script&gt;</code>.</p>
+            <pre><code>&lt;script src=./js"script.js"&gt;&lt;/script&gt;</code></pre>
+        </article>
+
+        <article>
+            <h3>2) ¿Cómo visualizar los resultados utilizando la consola del navegador?</h3>
+            <ol>
+                <li>Abrir el archivo <code>index.html</code> en un navegador web (visual studio code).</li>
+                <li>Abrir las herramientas de desarrollador presionando la tecla <code>F12</code> o clic derecho en la página y seleccionar <strong>Inspeccionar</strong>.</li>
+                <li>Ir a la pestaña llamada <strong>Consola</strong> (Console).</li>
+                <li>Allí se visualizarán las salidas generadas por funciones como <code>console.log()</code>, así como errores o mensajes del sistema.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>3) Variables en script.js:  <code>let</code> y <code>const</code></h3>
+            <p>Una variable en script.js es un contenedor para almacenar datos e información.</p>
+            <ul>
+            
+                <li><strong><code>let</code>:</strong> Tiene alcance de bloque (block scope). Permite reasignar su valor pero no volver a declararla en el mismo ámbito.</li>
+                <li><strong><code>const</code>:</strong> Tiene alcance de bloque. Su valor es constante, por lo que no se puede reasignar ni redeclarar.</li>
+            </ul>
+
+           
+            <p><strong>¿Cuál ya no se recomienda utilizar y por qué?</strong><br>
+            Ya no se recomienda utilizar <strong><code>var</code></strong>. Su uso causa problemas debido a su alcance no delimitado por bloques y al comportamiento de <em>hoisting</em> (elevación), lo cual puede sobrescribir variables accidentalmente y generar errores difíciles de depurar en el código.</p>
+        </article>
+    </section>
+
+    <!-- Enlace al archivo de JavaScript donde están los ejercicios prácticos -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
