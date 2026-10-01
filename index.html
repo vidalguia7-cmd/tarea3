@@ -168,49 +168,64 @@
     </table>
 
     <!-- Título Principal -->
-    <div class="practica-title">PRÁCTICA N3 - GIT Y GITHUB</div>
-
+    <div class="practica-title">PRÁCTICA N3 </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica N3 - Auxiliatura SIS-313</title>
+</head>
+<body>
     
-    
+        <h2>Preguntas Teóricas</h2>
 
-    <section>
         
+            <h3>1) Existen dos formas principales de conectar un archivo HTML con JavaScript. Explique cuáles son estas 2 formas y proporcione un ejemplo básico de cada una.</h3>
+            <p><strong>Forma 1: Script Interno (In-line / Embedded)</strong><br>
+            Consiste en escribir código JavaScript directamente dentro del archivo HTML utilizando la etiqueta <code>&lt;script&gt;</code>.</p>
+            <pre>
+&lt;!-- Ejemplo Interno --&gt;
+&lt;script&gt;
+    console.log("Hola desde el script interno");
+&lt;/script&gt;
+            </pre>
 
-        <article>
-            <h3>1) Formas principales de conectar HTML con JavaScript</h3>
-            <p><strong>A) Script Interno (In-line / Embedded):</strong> Se escribe el código directamente dentro de una etiqueta <code>&lt;script&gt;</code> en el archivo HTML.</p>
-            <pre><code>&lt;script&gt;
-    console.log("Hola desde código interno");
-&lt;/script&gt;</code></pre>
-
-            <p><strong>B) Script Externo:</strong> Se vincula un archivo ejecutable <code>.js</code> independiente mediante el atributo <code>src</code> en la etiqueta <code>&lt;script&gt;</code>.</p>
-            <pre><code>&lt;script src=./js"script.js"&gt;&lt;/script&gt;</code></pre>
+            <p><strong>Forma 2: Script Externo</strong><br>
+            Consiste en vincular un archivo independiente con extensión <code>.js</code> mediante el atributo <code>src</code> en la etiqueta <code>&lt;script&gt;</code>.</p>
+            <pre>
+&lt;!-- Ejemplo Externo --&gt;
+&lt;script src="./js/script.js"&gt;&lt;/script&gt;
+            </pre>
         </article>
 
         <article>
-            <h3>2) ¿Cómo visualizar los resultados utilizando la consola del navegador?</h3>
+            <h3>2) Explique paso a paso cómo visualizar los resultados de JavaScript utilizando la consola del navegador.</h3>
             <ol>
-                <li>Abrir el archivo <code>index.html</code> en un navegador web (visual studio code).</li>
-                <li>Abrir las herramientas de desarrollador presionando la tecla <code>F12</code> o clic derecho en la página y seleccionar <strong>Inspeccionar</strong>.</li>
-                <li>Ir a la pestaña llamada <strong>Consola</strong> (Console).</li>
-                <li>Allí se visualizarán las salidas generadas por funciones como <code>console.log()</code>, así como errores o mensajes del sistema.</li>
+                <li>Abrir el navegador web (como Google Chrome, Firefox o Edge) y cargar la página HTML.</li>
+                <li>Abrir las Herramientas de Desarrollador presionando la tecla <code>F12</code> o las teclas <code>Ctrl + Shift + I</code> (o clic derecho en cualquier parte de la página y seleccionar <strong>Inspeccionar</strong>).</li>
+                <li>Hacer clic en la pestaña <strong>Consola</strong> (Console).</li>
+                <li>En la consola se mostrarán las salidas ejecutadas por comandos como <code>console.log()</code>, mensajes del sistema o errores de JavaScript.</li>
             </ol>
         </article>
 
         <article>
-            <h3>3) Variables en script.js:  <code>let</code> y <code>const</code></h3>
-            <p>Una variable en script.js es un contenedor para almacenar datos e información.</p>
+            <h3>3) Explique qué son las variables en JavaScript y cuál es la diferencia entre var, let y const. Incluya un ejemplo sencillo de cada una e indique cuál de estas formas ya no se recomienda utilizar actualmente y por qué.</h3>
+            <p>Las <strong>variables</strong> son contenedores que nos permiten almacenar datos en la memoria para utilizarlos o modificarlos durante la ejecución del programa.</p>
             <ul>
-            
-                <li><strong><code>let</code>:</strong> Tiene alcance de bloque (block scope). Permite reasignar su valor pero no volver a declararla en el mismo ámbito.</li>
-                <li><strong><code>const</code>:</strong> Tiene alcance de bloque. Su valor es constante, por lo que no se puede reasignar ni redeclarar.</li>
-            </ul>
-
-           
-            <p><strong>¿Cuál ya no se recomienda utilizar y por qué?</strong><br>
-            Ya no se recomienda utilizar <strong><code>var</code></strong>. Su uso causa problemas debido a su alcance no delimitado por bloques y al comportamiento de <em>hoisting</em> (elevación), lo cual puede sobrescribir variables accidentalmente y generar errores difíciles de depurar en el código.</p>
+  <article>
+    <h3>3) Variables en JavaScript (var, let, const)</h3>
+    <p>Una variable guarda datos.    Ejemplo: <code>var a = 1; var a = 2;</code> (permite re declarar), <code>let b = 1; b = 2;</code> (re sasigna), <code>const c = 1;</code> (fijo).</p>
+    <p><strong>Diferencia:</strong> <code>var</code> tiene alcance global/función, mientras que <code>let</code> y <code>const</code> tienen alcance de bloque.</p>
+    <p><strong>No recomendada:</strong> Ya no se usa <code>var</code> porque genera errores al sobrescribir variables globalmente; se debe usar <code>let</code> y <code>const</code>.</p>
+</article>
         </article>
     </section>
+
+   
+    
+    
+
 
     <!-- Enlace al archivo de JavaScript donde están los ejercicios prácticos -->
     <script src="./js/script.js"></script>
